@@ -113,14 +113,14 @@
         </div>
         <div class="sheet-col">
             <div class="sheet-panneau">
-                <span class="thead" data-i18n="ptsdenergie">Pts d'Énergie</span>
+                <span class="thead" data-i18n="ptsdenergie">Pts d'Ã‰nergie</span>
                     <input name="attr_PE" type="number" min="0" value="0" />;
                     <input name="attr_PEmax-monstre" type="number" value="0"  /><br />
                 <label class="sheet-label-casedroite" data-i18n="actuel">Actuel</label>
                 <label class="sheet-label-casegauche" data-i18n="max-p">Max.</label>
             </div>
             <div class="sheet-panneau">
-                <span class="thead" data-i18n="precision">Précision</span>
+                <span class="thead" data-i18n="precision">PrÃ©cision</span>
                 <select name="attr_Pre1monstre">                
                     <option value="4" data-i18n="d4">d4</option>
                     <option value="6" data-i18n="d6">d6</option>
@@ -161,9 +161,9 @@
                     <button class="sheet-btn" type="roll" value="&{template:base} {{Test=Test de Vigueur}} {{Perso=@{character_name}}} {{die1=[[1d@{VIGM}]]}} {{die2=[[?{2e Attribut ?|VIG, 1d@{VIGM}|AGI, 1d@{AGIM} | INT, 1d@{INTM} | ESP, 1d@{ESPM}}]]}} {{Mod=[[0]]}}"></button>
                 </div>
                 <div class="sheet-droite">
-                    <label data-i18n="agilite">Agilite</label><!-- "Agilité"" brise le code -->
+                    <label data-i18n="agilite">Agilite</label><!-- "AgilitÃ©"" brise le code -->
                     <input name="attr_AGIM" type="number" step="2" min="4" max="12" value="4" /> 
-                    <button class="sheet-btn" type="roll" value="&{template:base} {{Test=Test d'Agilité}} {{Perso=@{character_name}}} {{die1=[[1d@{AGIM}]]}} {{die2=[[?{2e Attribut ?|VIG, 1d@{VIGM}|AGI, 1d@{AGIM} | INT, 1d@{INTM} | ESP, 1d@{ESPM}}]]}} {{Mod=[[0]]}}"></button>
+                    <button class="sheet-btn" type="roll" value="&{template:base} {{Test=Test d'AgilitÃ©}} {{Perso=@{character_name}}} {{die1=[[1d@{AGIM}]]}} {{die2=[[?{2e Attribut ?|VIG, 1d@{VIGM}|AGI, 1d@{AGIM} | INT, 1d@{INTM} | ESP, 1d@{ESPM}}]]}} {{Mod=[[0]]}}"></button>
                 </div>
                 <div class="sheet-bas">
                     <label data-i18n="intelligence">Intelligence</label>
@@ -188,8 +188,8 @@
                     <label data-i18n="armure-c">Armure :</label><input type="number" name="attr_Armure-monstre" value="0" min="0"/>
                 </div>
                 <div>
-                    <label data-i18n="materiel-c">Matériel :</label><input type="text" name="attr_Materiel"/>
-                    <label data-i18n="degats-c">Dégâts :</label>
+                    <label data-i18n="materiel-c">MatÃ©riel :</label><input type="text" name="attr_Materiel"/>
+                    <label data-i18n="degats-c">DÃ©gÃ¢ts :</label>
                     <select name="attr_Dgt-monstre">                
                         <option value="4" data-i18n="d4">d4</option>
                         <option value="6" data-i18n="d6">d6</option>
@@ -201,7 +201,7 @@
             </div>
         </div>
         <div class="sheet-col">
-            <div class="thead" data-i18n="capacitiespeciales">Capacités spéciales</div>
+            <div class="thead" data-i18n="capacitiespeciales">CapacitÃ©s spÃ©ciales</div>
             <textarea rows="3" name="attr_capmonstre"></textarea></div>
         </div>
     </div>
@@ -239,35 +239,35 @@
         <div class="sheet-col val">
             <div class="thead" data-i18n="valeurs">Valeurs</div>
             <div>
-                <label data-i18n="vitalite-c">Vitalité :</label>
+                <label data-i18n="vitalite-c">VitalitÃ© :</label>
                 <input value="0" min="0" max="10" name="attr_Vit" type="number" />;/;<input value="@{Vit5} + @{Vit10} + 3" name="attr_VitMax" type="number" disabled/>
             </div>
             <div>
-                <label data-i18n="sessionsjouees-c">Sessions jouées :</label>
+                <label data-i18n="sessionsjouees-c">Sessions jouÃ©es :</label>
                 <input value="0" min="0" name="attr_Session" type="number" />
                 <label data-i18n="niveau-c">Niveau :</label>
                 <input value="@{NivDrag}" name="attr_Niveau-Dragon" type="number" disabled/>
             </div>
         </div>
         <div class="sheet-col">
-            <div class="thead" data-i18n="voyageursproteges">Voyageurs protégés</div>
+            <div class="thead" data-i18n="voyageursproteges">Voyageurs protÃ©gÃ©s</div>
             <textarea name="attr_Voyageur"></textarea>
         </div>
     </div>
     <div class="sheet-2colrow">
         <div class="sheet-col">
-            <div class="thead" data-i18n="apparencecaractere">Apparence - Caractère</div>
+            <div class="thead" data-i18n="apparencecaractere">Apparence - CaractÃ¨re</div>
             <textarea name="attr_Apparence"></textarea>
         </div>
         <div class="sheet-col">
-            <div class="thead" data-i18n="mondesproteges">Mondes protégés</div>
+            <div class="thead" data-i18n="mondesproteges">Mondes protÃ©gÃ©s</div>
             <textarea name="attr_Monde"></textarea>
         </div>
     </div>
     <div class="thead art-head">
-        <span data-i18n="artefacts">Artéfacts</span>
+        <span data-i18n="artefacts">ArtÃ©facts</span>
         <span data-i18n="effets">Effets</span>
-        <span data-i18n="selec">Sélec.</span>
+        <span data-i18n="selec">SÃ©lec.</span>
     </div>
     <div class="art">
         <div>
@@ -332,7 +332,7 @@
         </div>
         <div class="sheet-col">
             <div class="thead">
-                <span data-i18n="eveils">Éveils</span>
+                <span data-i18n="eveils">Ã‰veils</span>
                 <span data-i18n="effets">Effets</span>
             </div>
             <div class="sou-row">
@@ -376,7 +376,7 @@
     <div class="thead" data-i18n="historique">Historique</div>
     <div class="hist">
         <div class="thead">
-            <span data-i18n="scenarios">Scénarios</span>
+            <span data-i18n="scenarios">ScÃ©narios</span>
             <span data-i18n="dates">Dates</span>
             <span data-i18n="voyegeurs">Voyageurs</span>
         </div>
@@ -411,11 +411,11 @@
         </div>
         <div class="sheet-col">
             <div class="sheet-panneau">
-                <span class="thead" data-i18n="ptsdenergie">Pts d'Énergie</span>
+                <span class="thead" data-i18n="ptsdenergie">Pts d'Ã‰nergie</span>
                 <input name="attr_PE" type="number" min="0" value="0" />
                 <div class="sheet-tooltipsdownMid">
                     <input name="attr_PEmax" type="number" value="(@{ESP} * 2) + @{ModPE}  + @{PENIV2} + @{PENIV3} + @{PENIV4} + @{PENIV5} + @{PENIV6} + @{PENIV7} + @{PENIV8} + @{PENIV9} + @{PENIV10} + @{TypePEMod}" disabled /><br />
-                    <div><span data-i18n="modpointsenergiemax">Mod. Points d'Énergie Max :</span><input type="number" name="attr_ModPE" value="0"/></div>
+                    <div><span data-i18n="modpointsenergiemax">Mod. Points d'Ã‰nergie Max :</span><input type="number" name="attr_ModPE" value="0"/></div>
                 </div>
                 <label class="sheet-label-casedroite" data-i18n="actuel">Actuel</label>
                 <label class="sheet-label-casegauche" data-i18n="max-p">Max.</label>
@@ -434,7 +434,7 @@
                 <div class="sheet-label-middle">
                     <span data-i18n="attguerre">Att.Guerre</span>
                     <span data-i18n="limite">Limite</span>
-                    <span data-i18n="equipement">Équipement</span>
+                    <span data-i18n="equipement">Ã‰quipement</span>
                 </div>
             </div>
         </div>
@@ -451,7 +451,7 @@
                 </select>
                 <div>
                     <label class="sheet-label-casedroite" data-i18n="actuel">Actuel</label>
-                    <label class="sheet-label-casegauche" title="Si votre Condition est supérieure ou égale à 10, gagnez un bonus dans l'Attribut sélectionné" data-i18n="bonus">Bonus</label>
+                    <label class="sheet-label-casegauche" title="Si votre Condition est supÃ©rieure ou Ã©gale Ã  10, gagnez un bonus dans l'Attribut sÃ©lectionnÃ©" data-i18n="bonus">Bonus</label>
                 </div>
             </div>
             <div class="sheet-panneau">
@@ -480,7 +480,7 @@
                     <input name="attr_VIG2" type="number" value="@{VIGT}" disabled />
                 </div>
                 <div class="sheet-droite">
-                    <label data-i18n="agilite">Agilite</label><!-- "é"" brise le code -->
+                    <label data-i18n="agilite">Agilite</label><!-- "Ã©"" brise le code -->
                     <input name="attr_AGI2" type="number" value="@{AGIT}" disabled /> 
                 </div>
                 <div class="sheet-bas">
@@ -497,16 +497,16 @@
     <br>
     <div class="sheet-2colrow">
         <div class="sheet-col etats">
-            <div class="thead" data-i18n="etats">États</div>
-            <div><!-- "é"" brise le code -->
-                <label title="Réduit vos dés d'AGI" data-i18n="blesse-c">Blessé :</label><input type="number" name="attr_Blesse" value="0" min="0"/>
-                <label title="Réduit vos dés de VIG" data-i18n="empoisone-c">Empoisone :</label><input type="number" name="attr_Poison" value="0" min="0"/>
-                <label title="Réduit vos dés d'AGI et de VIG" data-i18n="malade-c">Malade :</label><input type="number" name="attr_Malade" value="0" min="0"/>
+            <div class="thead" data-i18n="etats">Ã‰tats</div>
+            <div><!-- "Ã©"" brise le code -->
+                <label title="RÃ©duit vos dÃ©s d'AGI" data-i18n="blesse-c">BlessÃ© :</label><input type="number" name="attr_Blesse" value="0" min="0"/>
+                <label title="RÃ©duit vos dÃ©s de VIG" data-i18n="empoisone-c">Empoisone :</label><input type="number" name="attr_Poison" value="0" min="0"/>
+                <label title="RÃ©duit vos dÃ©s d'AGI et de VIG" data-i18n="malade-c">Malade :</label><input type="number" name="attr_Malade" value="0" min="0"/>
             </div>
             <div>
-                <label title="Réduit vos dés d'ESP" data-i18n="las-c">Las :</label><input type="number" name="attr_Las" value="0" min="0"/>
-                <label title="Réduit vos dés d'INT" data-i18n="sureite-c">Surexite :</label><input type="number" name="attr_Surex" value="0" min="0"/>
-                <label title="Réduit vos dés d'ESP et d'INT" data-i18n="choque-c">Choque :</label><input type="number" name="attr_Choc" value="0" min="0"/>
+                <label title="RÃ©duit vos dÃ©s d'ESP" data-i18n="las-c">Las :</label><input type="number" name="attr_Las" value="0" min="0"/>
+                <label title="RÃ©duit vos dÃ©s d'INT" data-i18n="sureite-c">Surexite :</label><input type="number" name="attr_Surex" value="0" min="0"/>
+                <label title="RÃ©duit vos dÃ©s d'ESP et d'INT" data-i18n="choque-c">Choque :</label><input type="number" name="attr_Choc" value="0" min="0"/>
             </div>
         </div>
         <div class="sheet-col saison">
@@ -516,7 +516,7 @@
                 <select name='attr_currentSeason'>
                     <option value="0">-</option>
                     <option value="Spring" data-i18n="pringtemps">Pringtemps</option>
-                    <option value="Summer" data-i18n="ete">Éte</option>
+                    <option value="Summer" data-i18n="ete">Ã‰te</option>
                     <option value="Autumn" data-i18n="automne">Automne</option>
                     <option value="Winter" data-i18n="hiver">Hiver</option>
                 </select>
@@ -528,10 +528,10 @@
                     <option value="@{ModBois}" data-i18n="bois">Bois</option>
                     <option value="@{ModColline}" data-i18n="collines">Collines</option>
                     <option value="@{ModRocaille}" data-i18n="rocaille">Rocaille</option>
-                    <option value="@{ModForet}" data-i18n="foret">Forêt</option>
+                    <option value="@{ModForet}" data-i18n="foret">ForÃªt</option>
                     <option value="@{ModMarais}" data-i18n="marais">Marais</option>
                     <option value="@{ModMontagne}" data-i18n="montage">Montagne</option>
-                    <option value="@{ModDesert}" data-i18n="desert">Désert</option>
+                    <option value="@{ModDesert}" data-i18n="desert">DÃ©sert</option>
                     <option value="@{ModJungle}" data-i18n="jungle">Jungle</option>
                     <option value="@{ModHM}" data-i18n="hmontange">H.Montagne</option>
                 </select>
@@ -548,8 +548,8 @@
                     <option value="@{ModOrage}">Orage</option>
                     <option value="@{ModNeige}">Neige</option>
                     <option value="@{ModBrouillard}">Brouillard</option>
-                    <option value="@{ModTenebres}">Ténèbres</option>
-                    <option value="@{ModTempete}">Tempête</option>
+                    <option value="@{ModTenebres}">TÃ©nÃ¨bres</option>
+                    <option value="@{ModTempete}">TempÃªte</option>
                     <option value="@{ModBlizzard}">Blizzard</option>
                 </select>
             </div>
@@ -559,8 +559,8 @@
     <div class="character-tabs">
         <input type="radio" name="attr_sheet" class="sheet-tab-new" value="perso" checked="checked" /><span class="sheet-tab-new">;Perso.</span>
         <input type="radio" name="attr_sheet" class="sheet-tab-new" value="skills"/><span class="sheet-tab-new">Test</span>
-        <input type="radio" name="attr_sheet" class="sheet-tab-new" value="arms"/><span class="sheet-tab-new">Armes et Armure</span>
-        <input type="radio" name="attr_sheet" class="sheet-tab-new" value="equipement"/><span class="sheet-tab-new">Équipement</span>
+        <input type="radio" name="attr_sheet" class="sheet-tab-new" value="armes"/><span class="sheet-tab-new">Armes et Armure</span>
+        <input type="radio" name="attr_sheet" class="sheet-tab-new" value="equipement"/><span class="sheet-tab-new">Ã‰quipement</span>
         <input type="radio" name="attr_sheet" class="sheet-tab-new" value="animaux"/><span class="sheet-tab-new">Animaux</span>
         <input type="radio" name="attr_sheet" class="sheet-tab-new" value="xp"/><span class="sheet-tab-new">Progression</span>
     </div>
@@ -587,11 +587,11 @@
                          </select>
                     </div>
                     <div>
-                        <label data-i18n="objetfetiche">Objet fétiche :</label>
+                        <label data-i18n="objetfetiche">Objet fÃ©tiche :</label>
                         <input type="text" name="attr_objetfetiche"/>
                     </div>
                     <div>
-                        <label data-i18n="role-c">Rôle :</label>
+                        <label data-i18n="role-c">RÃ´le :</label>
                         <select name="attr_role">
                             <option value="">-</option>
                             <option value="Chroniqueur" data-i18n="chroniqueur">Chroniqueur</option>
@@ -606,10 +606,10 @@
                             <option value="">-</option>
                             <option value="Artisan" data-i18n="artisan">Artisan</option>
                             <option value="Fermier" data-i18n="fermier">Fermier</option>
-                            <option value="Guérisseur" data-i18n="guerisseur">Guérisseur</option>
+                            <option value="GuÃ©risseur" data-i18n="guerisseur">GuÃ©risseur</option>
                             <option value="Chasseur" data-i18n="chasseur">Chasseur</option>
                             <option value="Marchand" data-i18n="marchand">Marchand</option>
-                            <option value="Ménestrel" data-i18n="menestrel">Ménestrel</option>
+                            <option value="MÃ©nestrel" data-i18n="menestrel">MÃ©nestrel</option>
                             <option value="Navigateur" data-i18n="navigateur">Navigateur</option>
                             <option value="Noble" data-i18n="noble">Noble</option>
                         </select>
@@ -628,7 +628,7 @@
                         <select name="attr_saison1">
                             <option value="">-</option>
                             <option value="Pringtemps" data-i18n="pringtemps">Pringtemps</option>
-                            <option value="Été" data-i18n="ete">Été</option>
+                            <option value="Ã‰tÃ©" data-i18n="ete">Ã‰tÃ©</option>
                             <option value="Automne" data-i18n="automne" >Automne</option>
                             <option value="Hiver" data-i18n="hiver" >Hiver</option>
                         </select>
@@ -638,14 +638,14 @@
                     <div class="thead" data-i18n="description">Description</div>
                     <div>
                          <label data-i18n="sexe-c" data-i18n="">Sexe :</label><input class="short" type="text" name="attr_sexe">
-                         <label data-i18n="age-c" data-i18n="">Âge :</label><input class="short"  type="text" name="attr_age"/>
+                         <label data-i18n="age-c" data-i18n="">Ã‚ge :</label><input class="short"  type="text" name="attr_age"/>
                     </div>
                     <div>
-                        <label data-i18n="couelerrep">Couleur représentative et autres signes particuliers</label>
+                        <label data-i18n="couelerrep">Couleur reprÃ©sentative et autres signes particuliers</label>
                         <textarea rows="3" name="attr_couleuretsigne"></textarea>
                     </div>
                     <div>
-                        <label data-i18n="villagenatal">Village natal et raisons du départ</label>
+                        <label data-i18n="villagenatal">Village natal et raisons du dÃ©part</label>
                         <textarea rows="3" name="attr_village"></textarea>
                     </div>
                     <div>
@@ -657,56 +657,56 @@
             <div class="sheet-col">
                 <div class="arme-fav">
                     <div class="thead" data-i18n="armefavorite">Arme favorite</div>
-                    <input type="radio" class="radioChoice" name="attr_initialMastery" value="1"/><span data-i18n="epeecourte">Épée courte</span>
-                    <input type="radio" class="radioChoice" name="attr_initialMastery" value="2"/><span data-i18n="epeelounge">Épée longue</span>
+                    <input type="radio" class="radioChoice" name="attr_initialMastery" value="1"/><span data-i18n="epeecourte">Ã‰pÃ©e courte</span>
+                    <input type="radio" class="radioChoice" name="attr_initialMastery" value="2"/><span data-i18n="epeelounge">Ã‰pÃ©e longue</span>
                     <input type="radio" class="radioChoice" name="attr_initialMastery" value="3"/><span data-i18n="lance">Lance</span>
                     <input type="radio" class="radioChoice" name="attr_initialMastery" value="5"/><span data-i18n="arc">Arc</span>
                     <input type="radio" class="radioChoice" name="attr_initialMastery" value="4"/><span data-i18n="hache">Hache</span>
                     <input type="radio" class="radioChoice" name="attr_initialMastery" value="6"/><span data-i18n="mainsnues">Mains nues</span>
                 </div>
                 <input type="checkbox" class="showDiv" name="attr_showAttackTypeMastery" value="1">
-                <div class="thead" data-i18n="armefavsup">Arme favorite supplémentaire (Type Attaque)</div>
+                <div class="thead" data-i18n="armefavsup">Arme favorite supplÃ©mentaire (Type Attaque)</div>
                  <div class="arme-fav">
-                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="1"/><span data-i18n="epeecourte">Épée courte</span>
-                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="2"/><span data-i18n="epeelounge">Épée longue</span>
+                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="1"/><span data-i18n="epeecourte">Ã‰pÃ©e courte</span>
+                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="2"/><span data-i18n="epeelounge">Ã‰pÃ©e longue</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="3"/><span data-i18n="lance">Lance</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="5"/><span data-i18n="arc">Arc</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="4"/><span data-i18n="hache">Hache</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery" value="6"/><span data-i18n="mainsnues">Mains nues</span>
                     <br />
-                    <i data-i18n="vousne">Vous ne pouvez pas choisir une arme favorite que vous avez déjà. </i>
+                    <i data-i18n="vousne">Vous ne pouvez pas choisir une arme favorite que vous avez dÃ©jÃ . </i>
                 </div>
                 <input type="checkbox" class="showDiv" name="attr_showSecondAttackTypeMastery" value="1">
-                <div class="thead" data-i18n="armefavsup2">Arme favorite supplémentaire (2e Type Attaque)</div>
+                <div class="thead" data-i18n="armefavsup2">Arme favorite supplÃ©mentaire (2e Type Attaque)</div>
                  <div class="arme-fav">
-                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="1"/><span data-i18n="epeecourte">Épée courte</span>
-                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="2"/><span data-i18n="epeelounge">Épée longue</span>
+                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="1"/><span data-i18n="epeecourte">Ã‰pÃ©e courte</span>
+                    <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="2"/><span data-i18n="epeelounge">Ã‰pÃ©e longue</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="3"/><span data-i18n="lance">Lance</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="5"/><span data-i18n="arc">Arc</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="4"/><span data-i18n="hache">Hache</span>
                     <input type="radio" class="radioChoice" name="attr_attackTypeMastery2" value="6"/><span data-i18n="mainsnues">Mains nues</span>
                     <br />
-                    <i data-i18n="vousne">Vous ne pouvez pas choisir une arme favorite que vous avez déjà. </i>
+                    <i data-i18n="vousne">Vous ne pouvez pas choisir une arme favorite que vous avez dÃ©jÃ . </i>
                 </div>
                 <input type="checkbox" class="showDiv" name="attr_showWeaponGrace" value="1">
                 <div class="thead" data-i18n="escrime">Escrime</div>
                 <div class="arme-fav">
-                    <input type="radio" class="radioChoice" name="attr_weaponGrace" value="2"/><span data-i18n="epeelounge">Épée longue</span>
+                    <input type="radio" class="radioChoice" name="attr_weaponGrace" value="2"/><span data-i18n="epeelounge">Ã‰pÃ©e longue</span>
                     <input type="radio" class="radioChoice" name="attr_weaponGrace" value="3"/><span data-i18n="lance">Lance</span>
                     <input type="radio" class="radioChoice" name="attr_weaponGrace" value="5"/><span data-i18n="arc">Arc</span>
                     <br />
-                    <i data-i18n="sivouschois">Si vous choisissez une seconde fois une même arme favorite, vous gagnez un bonus de +1 pour toucher avec celle-ci.</i>
+                    <i data-i18n="sivouschois">Si vous choisissez une seconde fois une mÃªme arme favorite, vous gagnez un bonus de +1 pour toucher avec celle-ci.</i>
                 </div>
                 <input type="checkbox" class="showDiv" name="attr_showSecondWeaponGrace" value="1">
                 <div class="thead" data-i18n="escrime2">Escrime (2e Classe de Noble)</div>
                 <div class="arme-fav">
-                    <input type="radio" class="radioChoice" name="attr_weaponGrace2" value="2"/><span data-i18n="epeelounge">Épée longue</span>
+                    <input type="radio" class="radioChoice" name="attr_weaponGrace2" value="2"/><span data-i18n="epeelounge">Ã‰pÃ©e longue</span>
                     <input type="radio" class="radioChoice" name="attr_weaponGrace2" value="3"/><span data-i18n="lance">Lance</span>
                     <input type="radio" class="radioChoice" name="attr_weaponGrace2" value="5"/><span data-i18n="arc">Arc</span>
                     <br />
-                    <i data-i18n="sivouschois">Si vous choisissez une seconde fois une même arme favorite, vous gagnez un bonus de +1 pour toucher avec celle-ci.</i>
+                    <i data-i18n="sivouschois">Si vous choisissez une seconde fois une mÃªme arme favorite, vous gagnez un bonus de +1 pour toucher avec celle-ci.</i>
                     <br/>
-                    <i data-i18n="vousnepouvez">Vous ne pouvez pas choisir une arme d'escrime que vous avez déjà.</i>
+                    <i data-i18n="vousnepouvez">Vous ne pouvez pas choisir une arme d'escrime que vous avez dÃ©jÃ .</i>
                 </div>
                 <div class="thead" data-i18n="sortsmuscap">Sorts, Musiques et Capacites</div>
                 <div class="arme-fav talent">
@@ -719,18 +719,18 @@
                                 <option value="Musique" data-i18n="musique">Musique</option>
                                 <option value="Rituelle" data-i18n="rituelle">Rituelle</option>
                                 <option value="Saison (Pringtemps)" data-i18n="saisonpringtemps">Saison (Pringtemps)</option>
-                                <option value="Saison (Été)" data-i18n="saisonete">Saison (Ete)</option>
+                                <option value="Saison (Ã‰tÃ©)" data-i18n="saisonete">Saison (Ete)</option>
                                 <option value="Saison (Automne)" data-i18n="saisonautomne">Saison (Automne)</option>
                                 <option value="Saison (Hiver)" data-i18n="saisonhiver">Saison (Hiver)</option>
                                 <option value="Autre" data-i18n="autre">Autre</option> 
                             </select> 
                         </div>
                         <div>
-                            <label data-i18n="portee-c">Portee :</label><input type="text" name="attr_portéesort"/>
+                            <label data-i18n="portee-c">Portee :</label><input type="text" name="attr_portÃ©esort"/>
                             <label data-i18n="cible-c">Cible :</label><input type="text" name="attr_ciblesort"/>
                         </div>
                         <div>
-                            <label data-i18n="coute-c">Coût :</label><input type="text" name="attr_coutsort"/>
+                            <label data-i18n="coute-c">CoÃ»t :</label><input type="text" name="attr_coutsort"/>
                             <label data-i18n="duree-c">Duree :</label><input type="text" name="attr_dureesort"/>
                         </div>
                         <textarea placeholder="Effet" name="attr_effetsort"></textarea>
@@ -751,8 +751,8 @@
             <div>
                 <label data-i18n="plains-c">Plaines :</label><input type="number" name="attr_grasslandMod" value="0" />
                 <label data-i18n="bois-c">Bois :</label><input type="number" name="attr_woodsMod" value="0" />
-                <label data-i18n="forets-c">Forêts :</label><input type="number" name="attr_deepForestMod" value="0" />
-                <label data-i18n="deserts-c">Déserts :</label><input type="number" name="attr_desertMod" value="0" />
+                <label data-i18n="forets-c">ForÃªts :</label><input type="number" name="attr_deepForestMod" value="0" />
+                <label data-i18n="deserts-c">DÃ©serts :</label><input type="number" name="attr_desertMod" value="0" />
                 <label data-i18n="hautesmon-c">Hautes montagnes :</label><input type="number" name="attr_alpineMod" value="0" />
             </div>
             <div>
@@ -784,8 +784,8 @@
                 <label data-i18n="froid-c">Froid :</label><input type="number" name="attr_coldMod" value="0" />
                 <label data-i18n="pluie-c">Pluie :</label><input type="number" name="attr_rainMod" value="0" />
                 <label data-i18n="orage-c">Orage :</label><input type="number" name="attr_hardRainMod" value="0" />
-                <label data-i18n="tenebres-c">Ténèbres :</label><input type="number" name="attr_darkMod" value="0" />
-                <label data-i18n="tempete-c">Tempête :</label><input type="number" name="attr_hurricaneMod" value="0" />
+                <label data-i18n="tenebres-c">TÃ©nÃ¨bres :</label><input type="number" name="attr_darkMod" value="0" />
+                <label data-i18n="tempete-c">TempÃªte :</label><input type="number" name="attr_hurricaneMod" value="0" />
             </div>
             <div>
                 <label data-i18n="ventfort-c">Vent fort :</label><input type="number" name="attr_strongWindMod" value="0" />
@@ -798,23 +798,27 @@
         <input value="@{terrain} [Terrain] + @{weather} [Climat] + @{MalusEnc} [Encombrement]" name="attr_ModPaysageSC" type="hidden" />
         <input value="?{Concentration|Non, 0|Oui, 1+@{ConcentrationMod}} [Concentration] + @{MalusEnc} [Encombrement]" name="attr_ModAll" type="hidden" />
         <div class="sheet-2colrow">
-            <div class="sheet-col">
+            <div class="skill-col">
                 <!--- Start Condition -->
                 <div class="skill-row">
-                    <div class="skill-head"><b>Condition</b></div>
+                    <div class="skill-head"><b data-i18n="condition">Condition</b></div>
                     <div class="sheet-tips">
                         <div class="sheet-help-def sheet-help">
                             <div class="sheet-icon">
                                 <span class="sheet-icon-question">?</span>
                             </div>
                             <div class="sheet-help-content">
-                                <p>
-                                    Chaque matin, vous devez effectuer un test de Condition.
+                                <p data-i18n="condition-desc">Chaque matin, vous devez effectuer un test de Condition.</p>
+                                <p><b data-i18n="effet-c">Effet : </b>
+                                    <span>Le rÃ©sultat du test dÃ©termine votre valeur de Condition pour la journÃ©e.</span>
                                 </p>
-                                <p><b>Effet : </b> Le résultat du test détermine votre valeur de Condition pour la journée.</p>
-                                <p><b>Nuit blanche : </b>Si vous ne dormez pas durant la nuit, réduisez de moitié le résultat de votre test de Condition, arrondit à l'inférieur. </p>
-                                <p><b>Armure : </b>Si vous dormez en armure, ajoutez son Malus à votre test. </p>
-                                <p><b>Difficulté : </b> Aucune.</p>
+                                <p><b data-i18n="nuitblanche-c">Nuit blanche : </b>
+                                    <span data-i18n="condition-si">Si vous ne dormez pas durant la nuit, rÃ©duisez de moitiÃ© le rÃ©sultat de votre test de Condition, arrondit Ã  l'infÃ©rieur.</span>
+                                </p>
+                                <p><b data-i18n="armure-c">Armure : </b>
+                                    <span data-i18n="armure-si">Si vous dormez en armure, ajoutez son Malus Ã  votre test.</span>
+                                </p>
+                                <p><b data-i18n="difficulte-c">DifficultÃ© : </b> <span data-i18n="aucune">Aucune.</span></p>
                             </div>
                         </div>
                     </div>
@@ -832,21 +836,22 @@
                 <!--End of Condition -->
                 <!---:+:+:+: Vindikaell, Ajouter d'autres tests ici.  :+:+:+:--->
             </div>
-            <div class="sheet-col">
+            <div class="skill-col">
                 <!--- Start Deplacement -->
                 <div class="skill-row">
-                    <div class="skill-head"><b>Deplacement</b></div>
+                    <div class="skill-head"><b data-i18n="deplacement">Deplacement</b></div>
                     <div class="sheet-tips">
                         <div class="sheet-help-def sheet-help">
                             <div class="sheet-icon">
                                 <span class="sheet-icon-question">?</span>
                             </div>
                             <div class="sheet-help-content">
+                                <p data-i18n="chaquejour">Chaque jour de voyage, vous devez effectuer un test de DÃ©placement.</p>
                                 <p>
-                                    Chaque jour de voyage, vous devez effectuer un test de Déplacement.
+                                    <b data-i18n="effet-c">Effet : </b>
+                                    <span data-i18n="leresultat">Le rÃ©sultat du test dÃ©termine si vous avancez sans difficultÃ©.</span>
                                 </p>
-                                <p><b>Effet : </b> Le résultat du test détermine si vous avancez sans difficulté.</p>
-                                <p><b>Difficulté : </b> Paysage. 
+                                <p><b data-i18n="difficulte-c">DifficultÃ© : </b><span data-i18n="paysage">Paysage.</span>
                             </div>
                         </div>
                     </div>
@@ -858,21 +863,273 @@
                         <span data-i18n="mod-c">Mod :</span>
                         <input value="0" name="attr_Modbase-Dep" type="number" />
                         <input value="@{Modbase-Dep} [Mod. divers] + @{ModPaysage} + @{classeTravelMod} [Mod. Classe]" name="attr_Mod-Dep" type="hidden" />
-                        <button class="sheet-btn" type="roll" value="&{template:base} {{Test=Test de Déplacement}} {{Perso=@{character_name}}} {{Carac=VIG + AGI}} {{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Dep} + @{Malustotal}]]}} {{Deplacement=1}}"></button>
+                        <button class="sheet-btn" type="roll" value="&{template:base} {{Test=Test de DÃ©placement}} {{Perso=@{character_name}}} {{Carac=VIG + AGI}} {{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Dep} + @{Malustotal}]]}} {{Deplacement=1}}"></button>
                     </div>
                 </div>
                 <!--End of Deplacement -->
                 <!---:+:+:+: Vindikaell, Ajouter d'autres tests ici.  :+:+:+:--->
             </div>
+            <div class="skill-row autrestest">
+                <h3 class="sheet-section-header" data-i18n="autrestests">Autres tests</h3>
+                <fieldset class="repeating_tests">
+                    <input type="text" name="attr_autres_test" />
+                     <select name="attr_caractest1">
+                        <option value="0">-</option>
+                        <option value="@{VIGT}" data-i18n="vig">VIG</option>
+                        <option value="@{AGIT}" data-i18n="agi">AGI</option>
+                        <option value="@{INTT}" data-i18n="int">INT</option>
+                        <option value="@{ESPT}" data-i18n="esp">ESP</option>
+                    </select>
+                    <span> + </span>
+                    <select name="attr_caractest2">
+                        <option value="0">-</option>
+                        <option value="@{VIGT}" data-i18n="vig">VIG</option>
+                        <option value="@{AGIT}" data-i18n="agi">AGI</option>
+                        <option value="@{INTT}" data-i18n="int">INT</option>
+                        <option value="@{ESPT}" data-i18n="esp">ESP</option>
+                    </select>
+                    <span data-i18n="mod-c">Mod :</span>
+                    <input value="0" name="attr_modbase-test1" type="number" />
+                    <input value="@{Modbase-test1} [Mod. divers] + ?{Concentration|Non, 0|Oui, 1+@{ConcentrationMod}} [Concentration] + ?{Appliquez modificateur de Paysage? |Non,0|Oui,@{terrain} [Terrain] + @{weather} [Climat]} + @{MalusEnc} [Encombrement]" name="attr_Mod-test1" type="hidden" />
+                    <button class="sheet-btn" type="roll" class="roll-Comp" value="&{template:base} {{Test=Test de @{test1}}} {{Perso=@{character_name}}} {{die1=[[1d@{caractest1}]]}} {{die2=[[1d@{caractest2}]]}} {{Mod=[[@{Mod-test1}]]}}"></button>
+                </fieldset>
+            </div>
         </div>
     </div>
     <div class="tab-armes">
+        <h3 class="sheet-section-header" data-i18n="armes">Armes</h3>
+        <input value="?{Concentration|Non, 0|Oui, 1+@{ConcentrationMod}} + @{MalusEnc} " name="attr_ModAtt" type="hidden" />
+        <input value="@{typeDamageMod}" name="attr_ModDgt" type="hidden" />
+        <div class="sheet-row">
+            <div class="thead">
+                <h4 data-i18n="arme">Arme</h4>
+                <h4 data-i18n="type">Type</h4>
+                <h4 data-i18n="mains">Mains</h4>
+                <h4 data-i18n="mod-prec">Mod. Prï¿½cision</h4>
+                <h4 data-i18n="mod-dig">Mod. Dï¿½gï¿½ts</h4>
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <h4 data-i18n="resist">Rï¿½sist.</h4>
+                <h4 data-i18n="attaque">Attaque</h4>
+            </div>
+        </div>
+        <div class="sheet-row">
+            <fieldset class="repeating_arme">
+                <input name="attr_armenom" type="text" />
+                <select name="attr_armetype">
+                    <option value="-">-</option>
+                    <option value="{{die1=[[1d@{AGIT}]]}} {{die2=[[1d@{INTT}]]}} {{Mod=[[@{Mod-Arme} + 1]]}} {{Dgt=[[1d@{INTT} + @{Mod-ArmeDgt} -1]]}} {{Dgtcrit=[[1d@{INTT}]]}}" data-i18n="epeecourte">ï¿½pï¿½e courte</option>
+                    <option value="{{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Arme} + (@{MasteryLongue} * @{GraceLongue})]]}} {{Dgt=[[1d@{VIGT} + @{Mod-ArmeDgt}]]}} {{Dgtcrit=[[1d@{VIGT}]]}}"
+                    data-i18n="epeelounge">ï¿½pï¿½e longue</option>
+                    <option value="{{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{VIGT}]]}} {{Mod=[[@{Mod-Arme} - 1]]}} {{Dgt=[[1d@{VIGT} + @{Mod-ArmeDgt}]]}} {{Dgtcrit=[[1d@{VIGT}]]}}" data-i18n="hache">Hache</option>
+                    <option value="{{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Arme} + (@{MasteryLance} * @{GraceLance})]]}} {{Dgt=[[1d@{VIGT} + @{Mod-ArmeDgt} + 1]]}} {{Dgtcrit=[[1d@{VIGT}]]}}" ata-i18n="lance">Lance</option>
+                    <option value="{{die1=[[1d@{AGIT}]]}} {{die2=[[1d@{INTT}]]}} {{Mod=[[@{Mod-Arme} - 2 + (@{MasteryArc} * @{GraceArc})]]}} {{Dgt=[[1d@{AGIT} + @{Mod-ArmeDgt}]]}} {{Dgtcrit=[[1d@{AGIT}]]}}" ata-i18n="arc">Arc</option>
+                    <option value="{{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Arme}]]}} {{Dgt=[[1d@{VIGT} + @{Mod-ArmeDgt} - 2]]}} {{Dgtcrit=[[1d@{INTT}]]}}" ata-i18n="mainsnues">Mains nues</option>
+                    <option value="{{die1=[[1d@{VIGT}]]}} {{die2=[[1d@{AGIT}]]}} {{Mod=[[@{Mod-Arme}]]}} {{Dgt=[[1d@{VIGT} + @{Mod-ArmeDgt} - 1]]}} {{Dgtcrit=[[1d@{INTT}]]}}" ata-i18n="armeimprovise">Arme improvisï¿½e</option>
+                </select>
+                <select class="hands" name="attr_armemains">
+                    <option value="-">-</option>
+                    <option value="1">&#9995;</option>
+                    <option value="2">&#9995; | &#9995; </option>
+                </select>
+                <input value="0" name="attr_armeModAtt" type="number" />
+                <input value="0" name="attr_armeModDgt" type="number" />
+                <input value="0" min="0" max="5" name="attr_armeEnc" type="number" />
+                <input value="0" min="0" max="5" name="attr_armeRes" type="number" />
+                 <button class="sheet-btn" type="roll" class="roll-Comp" value="&{template:base} {{Test=Attaque avec @{armenom}}} {{Perso=@{character_name}}} @{armetype} {{Attaque=1}}"></button>
+                <input value="@{armeModAtt} + @{ModAtt}" name="attr_Mod-Arme" type="hidden" />
+                <input value="@{armeModDgt} + @{ModDgt}" name="attr_Mod-ArmeDgt" type="hidden" />
+                <br />
+                <b class="note" data-i18n="note-c">Note :</b><input name="attr_armenote" type="text" />
+            </fieldset>
+        </div>
+        <div class="sheet-row autrearme">
+            <div class="thead">
+                <h4 data-i18n="autrearme">Autre arme</h4>
+                <h4 data-i18n="mains">Mains</h4>
+                <h4 data-i18n="precision">Prï¿½cision</h4>
+                <h4 data-i18n="degats">Dï¿½gï¿½ts</h4>
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <h4 data-i18n="resist">Rï¿½sist.</h4>
+                <h4 data-i18n="attaque">Attaque</h4>
+            </div>
+        </div>
+        <div class="sheet-row autrearme">
+            <input name="attr_arme4nom" type="text" />
+            <select class="hands"  name="attr_arme4mains">
+                <option value="-">-</option>
+                <option value="1">&#9995;</option>
+                <option value="2">&#9995; | &#9995; </option>
+            </select>
+            <select class="small" name="attr_caracarme41">
+                <option value="0">-</option>
+                <option value="0">-</option>
+                <option value="@{VIGT}" data-i18n="vig">VIG</option>
+                <option value="@{AGIT}" data-i18n="agi">AGI</option>
+                <option value="@{INTT}" data-i18n="int">INT</option>
+                <option value="@{ESPT}" data-i18n="esp">ESP</option>
+            </select>
+            <span>+</span>
+            <select class="small" name="attr_caracarme42">
+                <option value="0">-</option>
+                <option value="@{VIGT}" data-i18n="vig">VIG</option>
+                <option value="@{AGIT}" data-i18n="agi">AGI</option>
+                <option value="@{INTT}" data-i18n="int">INT</option>
+                <option value="@{ESPT}" data-i18n="esp">ESP</option>
+            </select>
+            <span>+</span> 
+            <input value="0" name="attr_arme4ModAtt" type="number" />
+            <select class="small" name="attr_caracdgtarme4">
+                <option value="0">-</option>
+                <option value="@{VIGT}" data-i18n="vig">VIG</option>
+                <option value="@{AGIT}" data-i18n="agi">AGI</option>
+                <option value="@{INTT}" data-i18n="int">INT</option>
+                <option value="@{ESPT}" data-i18n="esp">ESP</option>
+            </select>
+            <span>+</span> 
+            <input value="0" name="attr_arme4ModDgt" type="number" />
+            <input value="0" min="0" max="5" name="attr_arme4Enc" type="number" />
+            <input value="0" min="0" max="5" name="attr_arme4Res" type="number" />
+            <button class="sheet-btn" type="roll" class="roll-Comp" value="&{template:base} {{Test=Attaque avec @{arme3nom}}} {{Perso=@{character_name}}} @{arme3type} {{Attaque=1}}"></button>
+            <input value="@{arme4ModAtt} + @{ModAtt}" name="attr_Mod-arme4" type="hidden" />
+            <input value="@{arme4ModDgt} + @{ModDgt}" name="attr_Mod-arme4Dgt" type="hidden" />
+            <br />
+            <b class="note" data-i18n="note-c">Note :</b><input name="attr_arme4note" type="text" />
+        </div>
+        <h3 class="sheet-section-header" data-i18n="protections">Protections</h3>
+        <div class="sheet-row protections">
+            <div class="thead">
+                <h4 data-i18n="noms">Noms</h4>
+                <h4 data-i18n="mains">Mains</h4>
+                <h4 data-i18n="protection">Protection</h4>
+                <h4 data-i18n="defense">Dï¿½fense</h4>
+                <h4 data-i18n="malus">Malus</h4>
+                <h4 data-i18n="enc-p">Enc</h4>
+            </div>
+        </div>
+        <div class="sheet-row protections">
+            <fieldset class="repeating_protections">
+                <input name="attr_armurenom" type="text" />
+                <select name="attr_armuremains">
+                    <option value="-">-</option>
+                    <option value="2" data-i18n="corps">Corps</option></option>
+                    <option value="1">&#9995;</option>
+                </select>
+                <input value="0" min="0" name="attr_armureProtection" type="number" />
+                <input value="0" min="0" name="attr_armureDef" type="number" />
+                <input value="0" max="0" min="-5" name="attr_armureMalus" type="number" />
+                <input value="0" min="0" max="5" name="attr_armureEnc" type="number" />
+                <br />
+                <b class="note" data-i18n="note-c">Note :</b><input name="attr_armurenote" type="text" />
+            </fieldset>
+        </div>
     </div>
     <div class="tab-equipement">
+        <h3 class="sheet-section-header" data-i18n="equipement">ï¿½quipements</h3>
+        <div class="sheet-row">
+            <div class="thead">
+                <b data-i18n="pieces">Piï¿½ces d'or : </b>
+                <input min="0" value="1000" name="attr_Or" type="number" />
+                <br />
+                <h4 data-i18n="equipement">ï¿½quipement</h4>
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <h4 data-i18n="res-p">Res.</h4>
+                <h4 data-i18n="effet">Effet</h4>
+                <h4 data-i18n="nb-p">Nb.</h4>
+            </div>
+        </div>
+        <div class="sheet-row">
+             <fieldset class="repeating_equipement">
+                <input name="attr_Equinom" type="text" />
+                <input min="0" max="5" value="0" name="attr_EquiEnc" type="number" />
+                <input min="0" max="5" value="0" name="attr_EquiR" type="number" />
+                <input class="long" name="attr_EquiEffet" type="text" />
+                <input value="0" name="attr_EquiNB1" type="number" /><span>/</span>
+                <input value="0" name="attr_EquiNB2" type="number" />
+            </fieldset>
+        </div>
+        <div class="sheet-row">
+            <div class="thead contenant">
+                <b data-i18n="contenant-1">Contenant 1 </b>
+                <input name="attr_Conte1nom" type="text" />
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <input min="0" value="0" name="attr_Conte1Enc" type="number" />
+                <h4 data-i18n="capacit">Capacitï¿½ du Contenant :</h4>
+                <input value="@{Conte1Nb2} - @{Equi11Enc} - @{Equi12Enc} - @{Equi13Enc} - @{Equi14Enc} - @{Equi15Enc}" name="attr_Conte1Nb1" type="number" disabled />
+                <span>/</span>
+                <input value="0" name="attr_Conte1Nb2" type="number" />
+                <br />
+                <h4 data-i18n="equipement">ï¿½quipement</h4>
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <h4 data-i18n="res-p">Res.</h4>
+                <h4 data-i18n="effet">Effet</h4>
+                <h4 data-i18n="nb-p">Nb.</h4>
+            </div>
+            <div class="sheet-row">
+                 <fieldset class="repeating_equipement1">
+                    <input name="attr_Equinom" type="text" />
+                    <input min="0" max="5" value="0" name="attr_EquiEnc" type="number" />
+                    <input min="0" max="5" value="0" name="attr_EquiR" type="number" />
+                    <input class="long" name="attr_EquiEffet" type="text" />
+                    <input value="0" name="attr_EquiNB1" type="number" /><span>/</span>
+                    <input value="0" name="attr_EquiNB2" type="number" />
+                </fieldset>
+            </div>
+        </div>
+       <div class="sheet-row">
+            <div class="thead contenant">
+                <b data-i18n="contenant-2">Contenant 2 </b>
+                <input name="attr_Conte2nom" type="text" />
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <input min="0" value="0" name="attr_Conte2Enc" type="number" />
+                <h4 data-i18n="capacit">Capacitï¿½ du Contenant :</h4>
+                <input value="@{Conte2Nb2} - @{Equi21Enc} - @{Equi22Enc} - @{Equi23Enc} - @{Equi24Enc} - @{Equi25Enc}" name="attr_Conte2Nb1" type="number" disabled />
+                <span>/</span>
+                <input value="0" name="attr_Conte2Nb2" type="number" />
+                <br />
+                <h4 data-i18n="equipement">ï¿½quipement</h4>
+                <h4 data-i18n="enc-p">Enc.</h4>
+                <h4 data-i18n="res-p">Res.</h4>
+                <h4 data-i18n="effet">Effet</h4>
+                <h4 data-i18n="nb-p">Nb.</h4>
+            </div>
+            <div class="sheet-row">
+                 <fieldset class="repeating_equipement2">
+                    <input name="attr_Equi2nom" type="text" />
+                    <input min="0" max="5" value="0" name="attr_Equi2Enc" type="number" />
+                    <input min="0" max="5" value="0" name="attr_Equi2R" type="number" />
+                    <input class="long" name="attr_Equi2Effet" type="text" />
+                    <input value="0" name="attr_Equi2NB1" type="number" /><span>/</span>
+                    <input value="0" name="attr_Equi2NB2" type="number" />
+                </fieldset>
+            </div>
+        </div>
     </div>
     <div class="tab-animaux">
+         <h3 class="sheet-section-header" data-i18n="animaux">Animaux</h3>
+         <div class="sheet-row">
+            <div class="thead">
+                <b data-i18n="nombreanimaux-c">Nombre d'animaux :</b><input min="0" value="@{animalsmax}" name="attr_Animaux" type="number" disabled />
+            </div>
+        </div>
     </div>
     <div class="tab-xp">
+         <h3 class="sheet-section-header" data-i18n="progression">Progression</h3>
+         <div class="sheet-row">
+            <div class="thead">
+                <b data-i18n="attributbase">Attribut de base</b>
+                <br />
+                <h4 data-i18n="vigueur">Vigeur</h4>
+                <h4 data-i18n="agilite">Agilitï¿½</h4>
+                <h4 data-i18n="intelligence">Intelligence</h4>
+                <h4 data-i18n="esprit">Esprit</h4>
+            </div>
+        </div>
+        <div class="sheet-row">
+            <input name="attr_VIG" type="number" min="4" step="2" max="12" value="6" />
+            <input name="attr_AGI" type="number" min="4" step="2" max="12" value="6" />
+            <input name="attr_INT" type="number" min="4" step="2" max="12" value="6" />
+            <input name="attr_ESP" type="number" min="4" step="2" max="12" value="6" />
+        </div>
     </div>
 <div>
 
@@ -883,13 +1140,13 @@
             <div><span class="subheader">{{Carac}}</span></div>
             <div><span class="subheader">{{Perso}}</span></div>
             <div class="arrow-container"><div class="arrow-right"></div></div>
-            <div class="rowcolor"><span class="tcat"><b>Résultat : </b></span>{{die1}} + {{die2}} + {{Mod}}</div>
+            <div class="rowcolor"><span class="tcat"><b>RÃ©sultat : </b></span>{{die1}} + {{die2}} + {{Mod}}</div>
             
             {{#Melodie}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Tous vos compagnons bénéficient d'un bonus de +1 au test suivant l'utilisation de la mélodie.<br><b>Spécial : </b>Vous perdez 1 PV. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Tous vos compagnons bÃ©nÃ©ficient d'un bonus de +1 au test suivant l'utilisation de la mÃ©lodie.<br><b>SpÃ©cial : </b>Vous perdez 1 PV. </div>
             {{/Melodie}}
             {{#Commerce}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous réduisez (ou augmentez) le prix de vente ou d'achat de : 
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous rÃ©duisez (ou augmentez) le prix de vente ou d'achat de : 
                 <br><b>6-7 :</b>10%
                 <br><b>8-9 :</b>20%
                 <br><b>10-13 :</b>40%
@@ -898,58 +1155,58 @@
                 </div>
             {{/Commerce}}
             {{#Creation}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous créez un objet du type choisi lors de l'obtention de ce talent.<br><b>Échec : </b>Utiliser ce talent à nouveau prend du temps, mais n'engendre pas de coût supplémentaire. <br><b>Durée : </b> Encombrement de l'objet en jours. <br><b>Coût : </b> Moitié de son prix.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous crÃ©ez un objet du type choisi lors de l'obtention de ce talent.<br><b>Ã‰chec : </b>Utiliser ce talent Ã  nouveau prend du temps, mais n'engendre pas de coÃ»t supplÃ©mentaire. <br><b>DurÃ©e : </b> Encombrement de l'objet en jours. <br><b>CoÃ»t : </b> MoitiÃ© de son prix.</div>
             {{/Creation}}
             {{#Repa}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>La résistance de l'équipement réparé revient à son maximum.<br><b>Durée : </b> Encombrement de l'objet en heures. <br><b>Coût : </b> Chaque tentative de réparation coûte 10 % du prix de l'objet.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>La rÃ©sistance de l'Ã©quipement rÃ©parÃ© revient Ã  son maximum.<br><b>DurÃ©e : </b> Encombrement de l'objet en heures. <br><b>CoÃ»t : </b> Chaque tentative de rÃ©paration coÃ»te 10 % du prix de l'objet.</div>
             {{/Repa}}
             {{#Transf}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous transformez la dépouille d'un monstre en objets dépendant de son profil.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous transformez la dÃ©pouille d'un monstre en objets dÃ©pendant de son profil.</div>
             {{/Transf}}
             {{#Chasse}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous pouvez nourrir autant de personnes que le résultat du test, mais vous ne pouvez aider à monter le campement.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous pouvez nourrir autant de personnes que le rÃ©sultat du test, mais vous ne pouvez aider Ã  monter le campement.</div>
             {{/Chasse}}
             {{#Four}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous trouvez autant d'unité de nouriture et d'eau que le Résultat de votre test. Cependant, la vitesse de déplacement du groupe pour cette journée de voyage est réduite de moitié. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous trouvez autant d'unitÃ© de nouriture et d'eau que le RÃ©sultat de votre test. Cependant, la vitesse de dÃ©placement du groupe pour cette journÃ©e de voyage est rÃ©duite de moitiÃ©. </div>
             {{/Four}}
             {{#Condition}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Votre Condition pour la journée est égale au résultat du test.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Votre Condition pour la journÃ©e est Ã©gale au rÃ©sultat du test.</div>
             {{/Condition}}
             {{#Deplacement}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous voyagez sans difficulté.<br><b>Échec :</b> Réduisez vos PV de moitié, arrondit à l'inférieur.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous voyagez sans difficultÃ©.<br><b>Ã‰chec :</b> RÃ©duisez vos PV de moitiÃ©, arrondit Ã  l'infÃ©rieur.</div>
             {{/Deplacement}}
             {{#Orientation}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous vous orientez sans difficulté.<br><b>Échec :</b> Réduisez par deux votre déplacement de la journée. Si vous traversez la même zone le lendemain, ajoutez +1 à votre test d'Orientation. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous vous orientez sans difficultÃ©.<br><b>Ã‰chec :</b> RÃ©duisez par deux votre dÃ©placement de la journÃ©e. Si vous traversez la mÃªme zone le lendemain, ajoutez +1 Ã  votre test d'Orientation. </div>
             {{/Orientation}}
             {{#Campement}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous montez le camp sans difficulté. Tous les voyageurs regagnent la totalité de leur points d'Énergie et doublent leur points de Vie actuels (arrondi au supérieur). <br><b>Échec :</b> Les voyageurs ne regagne que 2 points d'Énergie et de Vie.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous montez le camp sans difficultÃ©. Tous les voyageurs regagnent la totalitÃ© de leur points d'Ã‰nergie et doublent leur points de Vie actuels (arrondi au supÃ©rieur). <br><b>Ã‰chec :</b> Les voyageurs ne regagne que 2 points d'Ã‰nergie et de Vie.</div>
             {{/Campement}}
             {{#Soins}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Le compagnon ciblé récupère autant de PV que le résultat du test.<br><b>Spécial : </b>Vous devez dépenser 1 unité d'herbes de soins et 1 unité d'eau.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Le compagnon ciblÃ© rÃ©cupÃ¨re autant de PV que le rÃ©sultat du test.<br><b>SpÃ©cial : </b>Vous devez dÃ©penser 1 unitÃ© d'herbes de soins et 1 unitÃ© d'eau.</div>
             {{/Soins}}
             {{#Herbe}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous obtenez 1 unité d'herbes de soins.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous obtenez 1 unitÃ© d'herbes de soins.</div>
             {{/Herbe}}
             {{#Traque}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous découvrez où se trouve un monstre et bénéficiez d'un bonus de +1 aux dégâts que vous lui infligé.</div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous dÃ©couvrez oÃ¹ se trouve un monstre et bÃ©nÃ©ficiez d'un bonus de +1 aux dÃ©gÃ¢ts que vous lui infligÃ©.</div>
             {{/Traque}}
             {{#Elixir}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Les symptômes de l'État de la cible disparaissent pendant 1 heure et la Difficulté de ce dernier baisse de {{Niveau}}. <br>Si l'État est réduit à 0 ou moins, il disparaît. <br>Un personnage ne peut bénéficier d'un Élixir Miracle qu'une fois par jour. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Les symptÃ´mes de l'Ã‰tat de la cible disparaissent pendant 1 heure et la DifficultÃ© de ce dernier baisse de {{Niveau}}. <br>Si l'Ã‰tat est rÃ©duit Ã  0 ou moins, il disparaÃ®t. <br>Un personnage ne peut bÃ©nÃ©ficier d'un Ã‰lixir Miracle qu'une fois par jour. </div>
             {{/Elixir}}
             {{#Legende}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous obtenez des informations encore plus précises sur ce dont vous venez d'entendre parler. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous obtenez des informations encore plus prÃ©cises sur ce dont vous venez d'entendre parler. </div>
             {{/Legende}}   
             {{#Erud}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous obtenez des informations encore plus précises sur ce dont vous venez d'entendre parler. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous obtenez des informations encore plus prÃ©cises sur ce dont vous venez d'entendre parler. </div>
             {{/Erud}}    
             {{#Etiquette}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous impressionnez un autre personnage issu de la haute société. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous impressionnez un autre personnage issu de la haute sociÃ©tÃ©. </div>
             {{/Etiquette}}
             {{#Navigation}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous manœuvrez sans difficulté votre bateau. </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous manÅ“uvrez sans difficultÃ© votre bateau. </div>
             {{/Navigation}}
             {{#Cuisine}}
-                <div class="rowcolor"><span class="tcat"><b>Réussite : </b></span>Vous améliorez la qualité des rations d’un nombre de compagnon égal à votre Résultat.  </div>
+                <div class="rowcolor"><span class="tcat"><b>RÃ©ussite : </b></span>Vous amÃ©liorez la qualitÃ© des rations dâ€™un nombre de compagnon Ã©gal Ã  votre RÃ©sultat.  </div>
             {{/Cuisine}}
                                                             
                                                      
@@ -957,61 +1214,61 @@
                         {{#rollWasFumble() die2}}
                             <div class="fumble">MALADRESSE !!!</div>
                             {{#Attaque}}
-                                <div class="rowcolor">Votre arme perd 1 point de Durabilité.</div>
+                                <div class="rowcolor">Votre arme perd 1 point de DurabilitÃ©.</div>
                             {{/Attaque}}
                             {{#Melodie}}
-                                <div class="rowcolor">Vos compagnons dont la Condition est inférieure ou égale à 6 subissent l'état Surexcité (6).</div>
+                                <div class="rowcolor">Vos compagnons dont la Condition est infÃ©rieure ou Ã©gale Ã  6 subissent l'Ã©tat SurexcitÃ© (6).</div>
                             {{/Melodie}}
                             {{#Chasse}}
-                                <div class="rowcolor">Vous subissez l'état Blessé (6).</div>
+                                <div class="rowcolor">Vous subissez l'Ã©tat BlessÃ© (6).</div>
                             {{/Chasse}}
                             {{#Herbe}}
-                                <div class="rowcolor">Vous subissez l'état Empoisonné (6).</div>
+                                <div class="rowcolor">Vous subissez l'Ã©tat EmpoisonnÃ© (6).</div>
                             {{/Herbe}}
                             {{#Condition}}
-                                <div class="rowcolor">Vous subissez l'état Blessé (4), Empoisonné (4), Las (4) ou Surexité (4).</div>
+                                <div class="rowcolor">Vous subissez l'Ã©tat BlessÃ© (4), EmpoisonnÃ© (4), Las (4) ou SurexitÃ© (4).</div>
                             {{/Condition}}
                             {{#Deplacement}}
-                                <div class="rowcolor">Réduisez à la place vos PV de trois-quarts, arrondit à l'inférieur.</div>
+                                <div class="rowcolor">RÃ©duisez Ã  la place vos PV de trois-quarts, arrondit Ã  l'infÃ©rieur.</div>
                             {{/Deplacement}}
                             {{#Campement}}
-                                <div class="rowcolor">Les voyageurs ne regagnent aucun point d'Énergie ou de Vie. De plus, ils ajoutent -1 à leur prochain test de Condition.</div>
+                                <div class="rowcolor">Les voyageurs ne regagnent aucun point d'Ã‰nergie ou de Vie. De plus, ils ajoutent -1 Ã  leur prochain test de Condition.</div>
                             {{/Campement}}
                             {{#Cuisine}}
-                                <div class="rowcolor">Tous vos compagnons qui ont mangé vos rations cuisinées et qui obtiennent une Condition de 6 ou moins le lendemain subissent l'état Las (6).</div>
+                                <div class="rowcolor">Tous vos compagnons qui ont mangÃ© vos rations cuisinÃ©es et qui obtiennent une Condition de 6 ou moins le lendemain subissent l'Ã©tat Las (6).</div>
                             {{/Cuisine}}
                         {{/rollWasFumble() die2}}
                     {{/rollWasFumble() die1}}
                         {{#Dgt}}
                             <div class="arrow-container"><div class="arrow-right"></div></div>
-                            <div class="rowcolor"><span class="tcat"><b>Dégâts : </b></span>{{Dgt}}</div>
+                            <div class="rowcolor"><span class="tcat"><b>DÃ©gÃ¢ts : </b></span>{{Dgt}}</div>
                         {{/Dgt}}
                             {{#rollWasCrit() die1}}
                                 {{#rollWasCrit() die2}}
                                     <div class="critical">CRITIQUE !!!</div>
                                         {{#Dgtcrit}}
-                                            <div class="rowcolor"><span class="tcat"><b>Dégâts + </b></span>{{Dgtcrit}}</div>
+                                            <div class="rowcolor"><span class="tcat"><b>DÃ©gÃ¢ts + </b></span>{{Dgtcrit}}</div>
                                         {{/Dgtcrit}}
                                         {{#Melodie}}
-                                            <div class="rowcolor">Le bonus de votre Mélodie passe à de +3.</div>
+                                            <div class="rowcolor">Le bonus de votre MÃ©lodie passe Ã  de +3.</div>
                                         {{/Melodie}}
                                         {{#Chasse}}
-                                            <div class="rowcolor">La nourriture obtenue est considérée comme un bon repas (+1 au test de Condition du lendemain).</div>
+                                            <div class="rowcolor">La nourriture obtenue est considÃ©rÃ©e comme un bon repas (+1 au test de Condition du lendemain).</div>
                                         {{/Chasse}}
                                         {{#Herbe}}
-                                            <div class="rowcolor">Vous obtenez 2 unités d'herbes de soins supplémentaire.</div>
+                                            <div class="rowcolor">Vous obtenez 2 unitÃ©s d'herbes de soins supplÃ©mentaire.</div>
                                         {{/Herbe}}
                                         {{#Deplacement}}
-                                            <div class="rowcolor">Ajoutez +1 à votre prochain test de Condition.</div>
+                                            <div class="rowcolor">Ajoutez +1 Ã  votre prochain test de Condition.</div>
                                         {{/Deplacement}}
                                         {{#Orientation}}
                                             <div class="rowcolor">Vous vous orientez correctement, quelque soit le Terrain et le Climat.</div>
                                         {{/Orientation}}
                                         {{#Campement}}
-                                            <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Énergie et de Vie. De plus, ils ajoutent +1 à leur prochain test de Condition.</div>
+                                            <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Ã‰nergie et de Vie. De plus, ils ajoutent +1 Ã  leur prochain test de Condition.</div>
                                         {{/Campement}}
                                         {{#Cuisine}}
-                                            <div class="rowcolor">Tous vos compagnons qui ont mangé vos rations cuisinées peuvent relancer leur test de Condition du lendemain.</div>
+                                            <div class="rowcolor">Tous vos compagnons qui ont mangÃ© vos rations cuisinÃ©es peuvent relancer leur test de Condition du lendemain.</div>
                                         {{/Cuisine}}
                                 {{/rollWasCrit() die2}}
                             {{/rollWasCrit() die1}}
@@ -1021,28 +1278,28 @@
                                         {{#^rollWasCrit() die2}}
                                             <div class="critical">CRITIQUE !!!</div>
                                                 {{#Dgtcrit}}
-                                                    <div class="rowcolor"><span class="tcat"><b>Dégâts + </b></span>{{Dgtcrit}}</div>
+                                                    <div class="rowcolor"><span class="tcat"><b>DÃ©gÃ¢ts + </b></span>{{Dgtcrit}}</div>
                                                 {{/Dgtcrit}}
                                                 {{#Melodie}}
-                                                    <div class="rowcolor">Le bonus de votre Mélodie passe à de +3.</div>
+                                                    <div class="rowcolor">Le bonus de votre MÃ©lodie passe Ã  de +3.</div>
                                                 {{/Melodie}}
                                                 {{#Chasse}}
-                                                    <div class="rowcolor">La nourriture obtenue est considérée comme un bon repas (+1 au test de Condition du lendemain).</div>
+                                                    <div class="rowcolor">La nourriture obtenue est considÃ©rÃ©e comme un bon repas (+1 au test de Condition du lendemain).</div>
                                                 {{/Chasse}}
                                                 {{#Herbe}}
-                                                    <div class="rowcolor">Vous obtenez 2 unités d'herbes de soins supplémentaire.</div>
+                                                    <div class="rowcolor">Vous obtenez 2 unitÃ©s d'herbes de soins supplÃ©mentaire.</div>
                                                 {{/Herbe}}
                                                 {{#Deplacement}}
-                                                    <div class="rowcolor">Ajoutez +1 à votre prochain test de Condition.</div>
+                                                    <div class="rowcolor">Ajoutez +1 Ã  votre prochain test de Condition.</div>
                                                 {{/Deplacement}}
                                                 {{#Orientation}}
                                                     <div class="rowcolor">Vous vous orientez correctement, quelque soit le Terrain et le Climat.</div>
                                                 {{/Orientation}}
                                                 {{#Campement}}
-                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Énergie et de Vie. De plus, ils ajoutent +1 à leur prochain test de Condition.</div>
+                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Ã‰nergie et de Vie. De plus, ils ajoutent +1 Ã  leur prochain test de Condition.</div>
                                                 {{/Campement}}
                                                 {{#Cuisine}}
-                                                    <div class="rowcolor">Tous vos compagnons qui ont mangé vos rations cuisinées peuvent relancer leur test de Condition du lendemain.</div>
+                                                    <div class="rowcolor">Tous vos compagnons qui ont mangÃ© vos rations cuisinÃ©es peuvent relancer leur test de Condition du lendemain.</div>
                                                 {{/Cuisine}}
                                         {{/^rollWasCrit() die2}}
                                     {{/^rollWasCrit() die1}}
@@ -1050,28 +1307,28 @@
                                         {{#^rollWasCrit() die2}}
                                             <div class="critical">CRITIQUE !!!</div>
                                                 {{#Dgtcrit}}
-                                                    <div class="rowcolor"><span class="tcat"><b>Dégâts + </b></span>{{Dgtcrit}}</div>
+                                                    <div class="rowcolor"><span class="tcat"><b>DÃ©gÃ¢ts + </b></span>{{Dgtcrit}}</div>
                                                 {{/Dgtcrit}}
                                                 {{#Melodie}}
-                                                    <div class="rowcolor">Le bonus de votre Mélodie passe à de +3.</div>
+                                                    <div class="rowcolor">Le bonus de votre MÃ©lodie passe Ã  de +3.</div>
                                                 {{/Melodie}}
                                                 {{#Chasse}}
-                                                    <div class="rowcolor">La nourriture obtenue est considérée comme un bon repas (+1 au test de Condition du lendemain).</div>
+                                                    <div class="rowcolor">La nourriture obtenue est considÃ©rÃ©e comme un bon repas (+1 au test de Condition du lendemain).</div>
                                                 {{/Chasse}}
                                                 {{#Herbe}}
-                                                    <div class="rowcolor">Vous obtenez 2 unités d'herbes de soins supplémentaire.</div>
+                                                    <div class="rowcolor">Vous obtenez 2 unitÃ©s d'herbes de soins supplÃ©mentaire.</div>
                                                 {{/Herbe}}
                                                 {{#Deplacement}}
-                                                    <div class="rowcolor">Ajoutez +1 à votre prochain test de Condition.</div>
+                                                    <div class="rowcolor">Ajoutez +1 Ã  votre prochain test de Condition.</div>
                                                 {{/Deplacement}}
                                                 {{#Orientation}}
                                                     <div class="rowcolor">Vous vous orientez correctement, quelque soit le Terrain et le Climat.</div>
                                                 {{/Orientation}}
                                                 {{#Campement}}
-                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Énergie et de Vie. De plus, ils ajoutent +1 à leur prochain test de Condition.</div>
+                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Ã‰nergie et de Vie. De plus, ils ajoutent +1 Ã  leur prochain test de Condition.</div>
                                                 {{/Campement}}
                                                 {{#Cuisine}}
-                                                    <div class="rowcolor">Tous vos compagnons qui ont mangé vos rations cuisinées peuvent relancer leur test de Condition du lendemain.</div>
+                                                    <div class="rowcolor">Tous vos compagnons qui ont mangÃ© vos rations cuisinÃ©es peuvent relancer leur test de Condition du lendemain.</div>
                                                 {{/Cuisine}}
                                         {{/^rollWasCrit() die2}}
                                     {{/rollWasCrit() die1}}
@@ -1079,28 +1336,28 @@
                                         {{#rollWasCrit() die2}}
                                             <div class="critical">CRITIQUE !!!</div>
                                                 {{#Dgtcrit}}
-                                                    <div class="rowcolor"><span class="tcat"><b>Dégâts + </b></span>{{Dgtcrit}}</div>
+                                                    <div class="rowcolor"><span class="tcat"><b>DÃ©gÃ¢ts + </b></span>{{Dgtcrit}}</div>
                                                 {{/Dgtcrit}}
                                                 {{#Melodie}}
-                                                    <div class="rowcolor">Le bonus de votre Mélodie passe à de +3.</div>
+                                                    <div class="rowcolor">Le bonus de votre MÃ©lodie passe Ã  de +3.</div>
                                                 {{/Melodie}}
                                                 {{#Chasse}}
-                                                    <div class="rowcolor">La nourriture obtenue est considérée comme un bon repas (+1 au test de Condition du lendemain).</div>
+                                                    <div class="rowcolor">La nourriture obtenue est considÃ©rÃ©e comme un bon repas (+1 au test de Condition du lendemain).</div>
                                                 {{/Chasse}}
                                                 {{#Herbe}}
-                                                    <div class="rowcolor">Vous obtenez 2 unités d'herbes de soins supplémentaire.</div>
+                                                    <div class="rowcolor">Vous obtenez 2 unitÃ©s d'herbes de soins supplÃ©mentaire.</div>
                                                 {{/Herbe}}
                                                 {{#Deplacement}}
-                                                    <div class="rowcolor">Ajoutez +1 à votre prochain test de Condition.</div>
+                                                    <div class="rowcolor">Ajoutez +1 Ã  votre prochain test de Condition.</div>
                                                 {{/Deplacement}}
                                                 {{#Orientation}}
                                                     <div class="rowcolor">Vous vous orientez correctement, quelque soit le Terrain et le Climat.</div>
                                                 {{/Orientation}}
                                                 {{#Campement}}
-                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Énergie et de Vie. De plus, ils ajoutent +1 à leur prochain test de Condition.</div>
+                                                    <div class="rowcolor">Les voyageurs recouvrent tous leurs points d'Ã‰nergie et de Vie. De plus, ils ajoutent +1 Ã  leur prochain test de Condition.</div>
                                                 {{/Campement}}
                                                 {{#Cuisine}}
-                                                    <div class="rowcolor">Tous vos compagnons qui ont mangé vos rations cuisinées peuvent relancer leur test de Condition du lendemain.</div>
+                                                    <div class="rowcolor">Tous vos compagnons qui ont mangÃ© vos rations cuisinÃ©es peuvent relancer leur test de Condition du lendemain.</div>
                                                 {{/Cuisine}}
                                         {{/rollWasCrit() die2}}
                                     {{/^rollWasCrit() die1}}
@@ -1114,7 +1371,7 @@
             <div><span class="subheader">{{Carac}}</span></div>
             <div><span class="subheader">{{Perso}}</span></div>
             <div class="arrow-container"><div class="arrow-right"></div></div>
-            <div class="rowcolor"><span class="tcat"><b>Résultat : </b></span>{{die1}}</div>
+            <div class="rowcolor"><span class="tcat"><b>RÃ©sultat : </b></span>{{die1}}</div>
         {{/Init}}
         
     </div>
@@ -1688,8 +1945,8 @@ var TAS = TAS || (function(){
             })
             .execute();
     };
-	console.log('%c•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸  The Aaron Sheet  v'+version+'  ¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•','background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;');
-	console.log('%c•.¸¸.•*´¨`*•.¸¸.•*´¨`*•.¸  Last update: '+(new Date(lastUpdate*1000))+'  ¸.•*´¨`*•.¸¸.•*´¨`*•.¸¸.•','background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;');
+	console.log('%câ€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸  The Aaron Sheet  v'+version+'  Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢','background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;');
+	console.log('%câ€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸  Last update: '+(new Date(lastUpdate*1000))+'  Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢*Â´Â¨`*â€¢.Â¸Â¸.â€¢','background: linear-gradient(to right,green,white,white,green); color:black;text-shadow: 0 0 8px white;');
     return {
         /* Repeating Sections */
         repeatingSimpleSum: repeatingSimpleSum,
@@ -1751,19 +2008,19 @@ var TAS = TAS || (function(){
         on("sheet:opened change:classe1 change:classe2", function() {
             getAttrs(["classe1", "classe2"], function(values) {
                 setAttrs({
-                    classeTravelMod: (values.classe1 == "Ménestrel" ? 1 : 0) + (values.classe2 == "Ménestrel" ? 1 : 0),
-                    classeDirectionMod: (values.classe1 == "Ménestrel" ? 1 : 0) + (values.classe2 == "Ménestrel" ? 1 : 0) + (values.classe1 == "Navigateur" ? 2 : 0) + (values.classe2 == "Navigateur" ? 2 : 0) - (values.classe1 == "Navigateur" && values.classe2 == "Navigateur" ? 1 : 0),
-                    classeCampMod: (values.classe1 == "Ménestrel" ? 1 : 0) + (values.classe2 == "Ménestrel" ? 1 : 0),
+                    classeTravelMod: (values.classe1 == "MÃ©nestrel" ? 1 : 0) + (values.classe2 == "MÃ©nestrel" ? 1 : 0),
+                    classeDirectionMod: (values.classe1 == "MÃ©nestrel" ? 1 : 0) + (values.classe2 == "MÃ©nestrel" ? 1 : 0) + (values.classe1 == "Navigateur" ? 2 : 0) + (values.classe2 == "Navigateur" ? 2 : 0) - (values.classe1 == "Navigateur" && values.classe2 == "Navigateur" ? 1 : 0),
+                    classeCampMod: (values.classe1 == "MÃ©nestrel" ? 1 : 0) + (values.classe2 == "MÃ©nestrel" ? 1 : 0),
                     classeNegotiationMod: (values.classe1 == "Marchand" ? 1 : 0) + (values.classe2 == "Marchand" ? 1 : 0),
                     classeEncMod: (values.classe1 == "Fermier" ? 3 : 0) + (values.classe2 == "Fermier" ? 3 : 0),
                     classeConditionMod: (values.classe1 == "Fermier" ? 1 : 0) + (values.classe2 == "Fermier" ? 1 : 0),
                     showArtisanSkills: (values.classe1 == "Artisan" || values.classe2 == "Artisan" ? 1 : 0),
                     showFarmerSkills: (values.classe1 == "Fermier" || values.classe2 == "Fermier" ? 1 : 0),
-                    showHealerSkills: (values.classe1 == "Guérisseur" || values.classe2 == "Guérisseur" ? 1 : 0),
+                    showHealerSkills: (values.classe1 == "GuÃ©risseur" || values.classe2 == "GuÃ©risseur" ? 1 : 0),
                     showHunterSkills: (values.classe1 == "Chasseur" || values.classe2 == "Chasseur" ? 1 : 0),
                     showNavigatorSkills: (values.classe1 == "Navigateur" || values.classe2 == "Navigateur" ? 1 : 0),
                     showMerchantSkills: (values.classe1 == "Marchand" || values.classe2 == "Marchand" ? 1 : 0),
-                    showMinstrelSkills: (values.classe1 == "Ménestrel" || values.classe2 == "Ménestrel" ? 1 : 0),
+                    showMinstrelSkills: (values.classe1 == "MÃ©nestrel" || values.classe2 == "MÃ©nestrel" ? 1 : 0),
                     showNobleSkills: (values.classe1 == "Noble" || values.classe2 == "Noble" ? 1 : 0),
                     showWeaponGrace: (values.classe1 == "Noble" || values.classe2 == "Noble" ? 1 : 0),
                     showSecondWeaponGrace: (values.classe1 == "Noble" && values.classe2 == "Noble" ? 1 : 0),

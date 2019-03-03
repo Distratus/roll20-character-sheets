@@ -35,17 +35,16 @@ input[type="number"] {
 
 .sheet-thead {
     display: block;
-    background-color: #6E6E6E;
+    background-color: #444;
     text-align: center;
     vertical-align: middle;
     color: white;
     font-weight: bold;
     font-size: 15px;
     border: none;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     padding: 3px 0px 3px 0px;
-    margin: 0px 0px 2px 0px;
-}
+    margin: 0px 0px 2px 0px;}
 
 div.sheet-section-header {
     margin-bottom: 0.5%;
@@ -248,40 +247,251 @@ div.sheet-ter-last label:nth-of-type(2) {
     margin-left: -0.1%;}
 
 /* ----- Skills tab ---- */
+div.sheet-skill-col {
+    display: inline-block;
+    width: calc(50% - 20px);}
+
+div.sheet-skill-col:nth-of-type(2) {
+    margin-left: 30px;}
+
 div.sheet-skill-row {
     display: inline-block;
-    margin: 1%;
+    margin : 1%;
     width  : 100%;}
 
 div.sheet-skill-head {
-    display: inline-block;
-    text-align: right;
+    display    : inline-block;
+    text-align : right;
     margin-left: 5%;
-    width: 35%;}
+    width      : 35%;}
 
 div.sheet-skill-stat {
     display: inline-block;
     width: 19%;}
 
 div.sheet-skill-inputs {
-    display: inline-block;
+    display    : inline-block;
     margin-left: 5%;
-    width: 34%;}
+    width      : 34%;}
+
+div.sheet-autrestest input[type="text"] {
+    margin: 1% 2%;
+    width: 35%;}
+
+div.sheet-autrestest select {
+    width: 15%;}
+
+div.sheet-autrestest select:nth-of-type(2){
+    margin-right: 10%;}
+
+/*-- Armes tab --*/
+div.sheet-tab-armes div.sheet-thead,
+div.sheet-tab-equipement div.sheet-thead,
+div.sheet-tab-xp div.sheet-thead {
+    text-align: left;
+    height: 40px;
+    margin: 1% 0px;}
+
+div.sheet-tab-armes h4,
+div.sheet-tab-equipement h4,
+div.sheet-tab-xp h4 {
+    color       : #fff;
+    display     : inline-block;
+    margin      : 0px;
+    text-align  : center;
+    width       : 5%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1) h4:nth-of-type(1) {
+    margin-right: 2%;
+    width: 30%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1) h4:nth-of-type(2) {
+    margin-right: 2%;
+    width       : 15%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1)  h4:nth-of-type(3) {
+    margin-right: 2%;
+    width       : 8%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1)  h4:nth-of-type(4),
+div.sheet-tab-armes div.sheet-row:nth-of-type(1)  h4:nth-of-type(5) {
+    width: 8%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1)  h4:nth-of-type(6) {
+     margin-left: 1%;}
+
+div.sheet-tab-armes div.sheet-row:nth-of-type(1) h4:nth-of-type(7) {
+    margin-left : 2%;
+    margin-right: 2%;}
+
+div.sheet-tab-armes input[type="text"] {
+    margin-right: 1%;
+    width: 30%;}
+
+div.sheet-tab-armes b.sheet-note {
+    margin-left: 5%;}
+
+div.sheet-tab-armes b.sheet-note + input {
+    margin-bottom: 3px;
+    margin-left  : 2%;
+    margin-top   : 5px;
+    width        : 80%;}
+
+div.sheet-tab-armes input[type="number"] {
+    font-size  : 16px;
+    font-weight: bold;
+    margin     : 0px 1.8%;
+    text-align : center;
+    width      : 5%;}
+
+div.sheet-tab-armes input[type="number"]:nth-of-type(4) {
+    margin-left : 1%;
+    margin-right: 1%;}
+
+div.sheet-tab-armes select {
+    margin    : 0px 1%;
+    min-height: 28px;
+    width     : 15%;}
+
+div.sheet-tab-armes select.sheet-small {
+    margin: 0px 0px;
+    width: 7%}
+
+div.sheet-tab-armes select.sheet-hands {
+    min-height: 28px;
+    height    : 24px;
+    width     : 8%;}
+
+div.sheet-tab-armes option {
+    text-align: center;}
+
+div.sheet-autrearme input[type="text"] {
+    width: 25%;}
+
+div.sheet-autrearme input[type="number"] {
+    margin: 0px 0.5%;}
+
+div.sheet-autrearme input[type="number"]:nth-of-type(1),
+div.sheet-autrearme input[type="number"]:nth-of-type(2) {
+    margin-right: 2%;}
+
+div.sheet-autrearme input[type="number"]:nth-of-type(4) {
+    margin-right: 3%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4 {
+    margin-right: 1%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4:nth-of-type(1) {
+    width: 25%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4:nth-of-type(2) {
+    width: 9%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4:nth-of-type(3) {
+    width: 24%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4:nth-of-type(4) {
+    width: 15%;}
+
+div.sheet-tab-armes div.sheet-autrearme h4:nth-of-type(5) {
+    width: 6%;}
+
+/*-- PROTECTIONS Tab --*/
+div.sheet-protections h4,
+div.sheet-tab-equipement h4,
+div.sheet-tab-xp h4 {
+    margin-right: 1%;}
+
+div.sheet-protections h4:nth-of-type(1)  {
+    width: 30%;}
+
+div.sheet-protections h4:nth-of-type(2)  {
+    width: 15%;}
+
+div.sheet-protections h4:nth-of-type(3),
+div.sheet-protections h4:nth-of-type(4)  {
+    width: 11%;}
+
+div.sheet-protections h4:nth-of-type(5) {
+    margin-right: 5%;
+    width       : 8%;}
+
+div.sheet-protections input[type="number"],
+div.sheet-protections input[type="number"]:nth-of-type(3),
+div.sheet-protections input[type="number"]:nth-of-type(4) {
+    margin-right: 5%;}
+
+/*-- Equipement Tab --*/
+div.sheet-tab-equipement b[data-i18n="pieces"]{
+    margin-left: 40%;
+    text-align : center;}
+
+div.sheet-tab-equipement div.sheet-thead {
+    height: 60px;}
+
+div.sheet-tab-equipement h4[data-i18n="equipement"],
+div.sheet-tab-equipement h4[data-i18n="capacit"],
+div.sheet-tab-equipement input[type="text"]:nth-of-type(1)    {
+    width: 25%;}
+
+div.sheet-tab-equipement h4[data-i18n="enc-p"] {
+    width: 6%;}
+
+div.sheet-tab-equipement h4[data-i18n="res-p"]  {
+    width: 7%;}
+
+div.sheet-tab-equipement h4[data-i18n="effet"],
+div.sheet-tab-equipement input.sheet-long   {
+    width: 42%;}
+
+div.sheet-tab-equipement h4[data-i18n="nb-p"]  {
+    width: 13%;}
+
+div.sheet-tab-equipement h4[data-i18n="contenant-1"] {
+    margin-left: 1%;}
+
+div.sheet-tab-equipement input[type="text"],
+div.sheet-tab-equipement input[type="number"] {
+    margin-bottom: 5px;
+    margin-right : 1%;}
+
+div.sheet-tab-equipement input[type="number"]:nth-of-type(5),
+div.sheet-tab-equipement input[type="number"]:nth-of-type(6) {
+    width: 5%;}
+
+/*-- XP Tab --*/
+div.sheet-tab-xp b[data-i18n="attributbase"]{
+    margin-left: 44%;
+    text-align : center;}
+
+div.sheet-tab-xp h4 {
+    margin    : 0px 2%;
+    text-align: center;
+    width     : 20%;}
+
+div.sheet-tab-xp input[type="number"] {
+    margin: 0px 8.7%;}
 
 /*-- NPC sheet ---*/
 div.sheet-panneau select {
-    min-height:28px;
-    width     :35%;}
+    min-height: 28px;
+    width     : 35%;}
 
 div.sheet-autres input[type="text"] {
     width: 40%;}
+
+div.sheet-autres input[type="number"] {
+    font-size  : 16px;
+    font-weight: bold;
+    text-align : center;
+    width      : 5%;}
 
 div.sheet-autres label {
     width     : 16%;}
 
 div.sheet-autres select {
     min-height:28px;
-    width     :56px; }
+    width     :20%; }
 
 /*--- GM sheet ----*/
 /* -----Informations row---- */
@@ -391,8 +601,7 @@ input.sheet-radioChoice {
     cursor: pointer;    
     position: relative;
 	opacity: 0;
-	z-index: 9999;
-}
+	z-index: 9999;}
 
 input.sheet-radioChoice  + span {
     text-align: center;
@@ -756,7 +965,7 @@ input.sheet-player-sheet[value="gm"] ~ div.sheet-tab-gm-sheet {
 input.sheet-character-tab[value="perso"] ~ div.sheet-tab-perso,
 input.sheet-character-tab[value="skills"] ~ div.sheet-tab-skills,
 input.sheet-character-tab[value="armes"] ~ div.sheet-tab-armes,
-input.sheet-character-tab[value="equipement"] ~ div.sheet-tab-equipment,
+input.sheet-character-tab[value="equipement"] ~ div.sheet-tab-equipement,
 input.sheet-character-tab[value="animaux"] ~ div.sheet-tab-animaux,
 input.sheet-character-tab[value="xp"] ~ div.sheet-tab-xp,
 input.sheet-tab-notes:checked ~ div.sheet-tab-notes,
